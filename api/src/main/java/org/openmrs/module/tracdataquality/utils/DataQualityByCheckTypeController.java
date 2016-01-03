@@ -13,7 +13,9 @@
  */
 package org.openmrs.module.tracdataquality.utils;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 //import org.openmrs.*;
 import org.apache.commons.logging.Log;
@@ -32,8 +34,6 @@ import org.openmrs.api.context.Context;
 import org.openmrs.module.tracdataquality.service.DataQualityService;
 import org.openmrs.module.tracdataquality.web.controller.DataqualityFormController;
 import org.springframework.transaction.UnexpectedRollbackException;
-
-import com.sun.corba.se.spi.servicecontext.ServiceContext;
 
 /**
  * controls dataQuality types
