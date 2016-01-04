@@ -19,6 +19,7 @@
 
 	<modules>
 		<module>api</module>
+		<module>api-common</module>
 		<module>omod</module>
 	</modules>
 
@@ -70,7 +71,7 @@ lib-common/tests-openmrs-api-1.6.2.12911-dev.jar
 	</dependencyManagement>
 
 	<properties>
-		<openMRSVersion>1.7.0</openMRSVersion>
+		<openMRSVersion>1.11.5</openMRSVersion>
 	</properties>
 
 	<build>
