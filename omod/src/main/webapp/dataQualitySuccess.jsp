@@ -1,13 +1,13 @@
 <%@ include file="/WEB-INF/template/include.jsp"%>
 <%@ include file="/WEB-INF/template/header.jsp"%>
-<openmrs:htmlInclude file="/moduleResources/@MODULE_ID@/styles/listingstyle.css" />
+<openmrs:htmlInclude file="/moduleResources/tracdataquality/styles/listingstyle.css" />
 
-<a href="${pageContext.request.contextPath}/admin/index.htm"><spring:message code="admin.title.short"/></a>&nbsp;|&nbsp;<a href="DataQualityAlerts.form"><spring:message code="@MODULE_ID@.perform"/></a>
+<a href="${pageContext.request.contextPath}/admin/index.htm"><spring:message code="admin.title.short"/></a>&nbsp;|&nbsp;<a href="DataQualityAlerts.form"><spring:message code="tracdataquality.perform"/></a>
 
-<h2><b><spring:message code="@MODULE_ID@.subTitle" /></b></h2>
+<h2><b><spring:message code="tracdataquality.subTitle" /></b></h2>
 <br/>
 
-<h3><b><spring:message code="@MODULE_ID@.result" arguments="65" /></b></h3>
+<h3><b><spring:message code="tracdataquality.result" arguments="65" /></b></h3>
 <br/>
 
 <div style="width: 99%; border: 1px solid #8FABC7; margin: auto; -moz-border-radius: 3px; padding: 3px;">
@@ -41,7 +41,7 @@
 		
 		<c:if test="${empty thePatientList}">
 			<tr>
-				<td colspan="${columns}" style="text-align: center;"><spring:message code="@MODULE_ID@.noResultFound"/></td>
+				<td colspan="${columns}" style="text-align: center;"><spring:message code="tracdataquality.noResultFound"/></td>
 			</tr>
 		</c:if>
 		
