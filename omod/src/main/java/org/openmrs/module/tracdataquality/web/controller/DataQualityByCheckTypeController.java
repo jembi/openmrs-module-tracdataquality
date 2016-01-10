@@ -11,7 +11,7 @@
  *
  * Copyright (C) OpenMRS, LLC.  All Rights Reserved.
  */
-package org.openmrs.module.tracdataquality.utils;
+package org.openmrs.module.tracdataquality.web.controller;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -32,7 +32,7 @@ import org.openmrs.api.PatientService;
 import org.openmrs.api.ProgramWorkflowService;
 import org.openmrs.api.context.Context;
 import org.openmrs.module.tracdataquality.service.DataQualityService;
-import org.openmrs.module.tracdataquality.web.controller.DataqualityFormController;
+import org.openmrs.module.tracdataquality.utils.PatientSortByName;
 import org.springframework.transaction.UnexpectedRollbackException;
 
 /**

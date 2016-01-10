@@ -14,7 +14,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.openmrs.module</groupId>
-			<artifactId>tracdataquality-api-common</artifactId>
+			<artifactId>tracdataquality-api</artifactId>
 			<version>${project.parent.version}</version>
 		</dependency>
 		<dependency>

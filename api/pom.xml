@@ -20,11 +20,6 @@
 		</dependency>
 		-->
 		<dependency>
-			<groupId>org.openmrs.module</groupId>
-			<artifactId>tracdataquality-api-common</artifactId>
-			<version>${project.parent.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>org.openmrs.api</groupId>
 			<artifactId>openmrs-api</artifactId>
 			<type>jar</type>

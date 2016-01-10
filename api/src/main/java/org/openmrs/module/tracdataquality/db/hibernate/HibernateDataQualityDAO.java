@@ -36,7 +36,6 @@ import org.openmrs.api.PatientService;
 import org.openmrs.api.PersonService;
 import org.openmrs.api.context.Context;
 import org.openmrs.module.tracdataquality.db.DataQualityDAO;
-import org.openmrs.module.tracdataquality.utils.DataQualityByCheckTypeController;
 import org.springframework.transaction.UnexpectedRollbackException;
 
 public class HibernateDataQualityDAO implements DataQualityDAO {
@@ -164,8 +163,7 @@ public class HibernateDataQualityDAO implements DataQualityDAO {
 		PatientService patientService = Context.getPatientService();
 		PersonService personService = Context.getPersonService();
 		Session session = sessionFactory.getCurrentSession();
-		DataQualityByCheckTypeController dataQualityByCheckTypeController = new DataQualityByCheckTypeController();
-		int transferInConcept = dataQualityByCheckTypeController.getGlobalProperty("programOver.transferredInConceptId");
+		int transferInConcept = Integer.parseInt(Context.getAdministrationService().getGlobalProperty("programOver.transferredInConceptId"));
 		//SQLQuery query = session.createSQLQuery("select distinct person_id from obs where person_id not in(select distinct person_id from obs where concept_id = ?) ");
 		SQLQuery query = session
 		        .createSQLQuery("select distinct ob.person_id from obs ob"
