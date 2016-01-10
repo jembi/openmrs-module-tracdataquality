@@ -21,7 +21,7 @@
 	<!-- Extensions -->
 	<extension>
 		<point>org.openmrs.admin.list</point>
-		<class>${project.parent.groupId}.${project.parent.artifactId}.extension.html.AdminList</class>
+		<class>org.openmrs.module.tracdataquality.extension.html.AdminList</class>
 	</extension>
 	 
 	 <privilege>
